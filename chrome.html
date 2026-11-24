@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Chromeを使っている人へ｜マネするだけ！3分でできる安全チェック｜しん</title>
+<meta name="description" content="パソコン版Google Chromeに「緊急」レベルの弱点の修正版が出たよ　更新のやり方を画像つきでまとめたよ　登録なし・無料で見られる">
+<meta property="og:title" content="Google Chromeを使っている人へ｜マネするだけ！3分でできる安全チェック">
+<meta property="og:description" content="更新のやり方を画像つきでまとめたよ　登録なし・無料🌱">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.skakeilife.com/wp-content/uploads/2026/09/IMG_7109-1.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="https://www.skakeilife.com/wp-content/uploads/2026/09/IMG_7109-1-150x150.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--m:#d8b4a6;--md:#b98571;--mdd:#9a6a58;--pale:#fff4ef;--bg:#fbf4f0;--line:#f0dcd3;--tx:#3a312e;--sub:#7a6a64;--yel:#fcf69f;--red:#c8553d;--redp:#fdeae4;--ok:#3f9b6b;--okp:#e6f5ec;--lineg:#06c755;--lined:#04a648}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx)}
+body{font-family:"Noto Sans JP",sans-serif;font-size:15px;line-height:1.85;-webkit-text-size-adjust:100%}
+a{color:inherit}
+.wrap{max-width:520px;margin:0 auto;padding:14px 16px 40px}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--md);font-weight:700;text-decoration:none;margin-bottom:12px}
+.back img{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);background:#fff}
+mark{background:linear-gradient(transparent 60%,var(--yel) 60%);color:inherit;font-weight:700}
+p{margin:0 0 12px}
+
+/* ヒーロー */
+.hero{background:#fff;border:2px solid var(--line);border-radius:26px;text-align:center;padding:22px 18px 20px;margin-bottom:18px}
+.hero .date{display:inline-block;background:var(--redp);color:var(--red);font-weight:800;font-size:12.5px;border-radius:99px;padding:2px 14px}
+.cr{display:block;width:52px;height:52px;margin:14px auto 0;border-radius:50%;background:radial-gradient(circle,#4285f4 0 36%,#fff 37% 47%,transparent 48%),conic-gradient(from -60deg,#ea4335 0 120deg,#fbbc04 120deg 240deg,#34a853 240deg 360deg);box-shadow:0 3px 10px #0000001a}
+.hero h1{font-size:23px;line-height:1.45;margin:12px 0 4px}
+.hero .sub{font-size:18px;font-weight:800;color:var(--md);margin:0}
+.hero .free{font-size:12.5px;color:var(--sub);margin:8px 0 0}
+
+/* 結論 */
+.point{background:var(--pale);border:2px dashed var(--m);border-radius:22px;padding:16px 18px;margin-bottom:30px}
+.point .lb{font-family:Quicksand,sans-serif;font-size:12px;letter-spacing:.2em;color:var(--md)}
+.point .t{font-weight:800;font-size:17px;line-height:1.6;margin:2px 0 6px}
+.point ul{margin:0;padding-left:1.2em;font-size:14px}
+
+/* 見出し */
+.sec{display:flex;align-items:flex-end;gap:10px;margin:0 0 14px}
+.sec .no{font-family:Quicksand,sans-serif;font-size:26px;color:var(--m);line-height:1;margin-bottom:2px}
+.sec h2{font-size:20px;margin:0;line-height:1.35;letter-spacing:.03em}
+.sec:after{content:"";flex:1;border-bottom:2px dotted var(--line);margin-bottom:8px}
+.card{background:#fff;border:2px solid var(--line);border-radius:22px;padding:18px 18px 8px;margin-bottom:30px}
+.fact{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px;background:var(--pale);border-radius:14px;padding:12px 14px;margin:4px 0 14px}
+.fact dt{color:var(--md);font-weight:800}
+.fact dd{margin:0}
+.lv{display:flex;gap:4px;margin:6px 0 2px}
+.lv span{flex:1;text-align:center;font-size:11.5px;font-weight:700;border-radius:8px;padding:3px 0;background:#f3ebe7;color:var(--sub)}
+.lv span.on{background:var(--red);color:#fff}
+.cap{font-size:11.5px;color:var(--sub);text-align:center;margin:0 0 12px}
+
+/* 自動チェック */
+.chk{border-radius:22px;padding:16px 18px;margin-bottom:30px;border:2px solid var(--line);background:#fff}
+.chk .h{font-weight:800;font-size:15px;display:flex;gap:8px;align-items:center}
+.chk .r{font-size:14px;margin-top:6px}
+.chk.ok{background:var(--okp);border-color:#bfe3cd}
+.chk.ng{background:var(--redp);border-color:#f2c3b5}
+.chk .v{font-family:Quicksand,sans-serif;font-size:13px;color:var(--sub)}
+
+/* ステップ */
+.tabs{display:flex;gap:6px;background:var(--pale);border-radius:99px;padding:4px;margin-bottom:16px}
+.tabs button{flex:1;border:0;background:transparent;font:inherit;font-weight:800;font-size:14px;color:var(--md);border-radius:99px;padding:8px 4px;cursor:pointer}
+.tabs button[aria-selected=true]{background:#fff;color:var(--tx);box-shadow:0 2px 6px #b9857133}
+.panel[hidden]{display:none}
+.step{display:flex;gap:12px;margin-bottom:18px}
+.step .n{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--md);color:#fff;font-family:Quicksand,sans-serif;font-size:16px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.step .b{flex:1;min-width:0}
+.step .t{font-weight:800;font-size:15.5px;line-height:1.55}
+.step .d{font-size:13px;color:var(--sub);line-height:1.7;margin-top:2px}
+
+/* 画面のイラスト */
+.scr{margin-top:10px;border:1.5px solid #e4d6cf;border-radius:12px;overflow:hidden;background:#fff;font-size:12px;box-shadow:0 2px 8px #b9857118}
+.scr .bar{display:flex;align-items:center;gap:6px;background:#f1ebe8;padding:7px 8px}
+.scr .dots i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#e3c9bf;margin-right:3px}
+.scr .url{flex:1;background:#fff;border-radius:99px;padding:2px 10px;color:var(--sub);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.scr .kebab{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;line-height:1;color:var(--tx)}
+.scr .kebab.hl{background:var(--yel);box-shadow:0 0 0 2px var(--red)}
+.scr .menu{margin:6px 8px 8px auto;width:72%;border:1px solid #eadfd9;border-radius:10px;padding:4px 0;background:#fff}
+.scr .menu div{padding:3px 12px;color:var(--sub);display:flex;justify-content:space-between}
+.scr .menu div.hl{background:var(--yel);color:var(--tx);font-weight:800}
+.scr .menu div.hl2{background:#fff;color:var(--tx);font-weight:800;outline:2px solid var(--red);outline-offset:-2px;border-radius:6px}
+.scr .sub2{position:relative;display:inline-block;margin:-30px 0 10px 8px;border:1px solid #eadfd9;border-radius:10px;padding:4px;background:#fff;white-space:nowrap;box-shadow:0 2px 8px #b9857126}
+.scr .sub2 div{padding:3px 10px;color:var(--sub)}
+.scr .sub2 .hl2{background:var(--yel);color:var(--tx);font-weight:800;border-radius:6px;box-shadow:inset 0 0 0 2px var(--red)}
+.scr .about{padding:14px 14px 16px}
+.scr .about .row{display:flex;align-items:center;gap:8px;font-weight:800;font-size:13px}
+.scr .about .ic{width:20px;height:20px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}
+.scr .about .ver{font-family:Quicksand,sans-serif;color:var(--sub);font-size:11.5px;margin:4px 0 0 28px}
+.scr .about .btn{display:inline-block;margin:10px 0 0 28px;background:#1a73e8;color:#fff;font-weight:800;border-radius:6px;padding:3px 14px;box-shadow:0 0 0 2px var(--yel),0 0 0 4px var(--red)}
+
+.tip{background:var(--pale);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.8;margin:2px 0 16px}
+.tip b{color:var(--md)}
+.copy{display:flex;gap:6px;margin-top:8px}
+.copy code{flex:1;min-width:0;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:6px 10px;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.copy button,.sbtn{border:0;font:inherit;font-weight:800;cursor:pointer}
+.copy button{background:var(--md);color:#fff;border-radius:10px;padding:0 12px;font-size:12.5px}
+
+.ph{border-top:1px solid var(--line);padding-top:14px;margin-top:4px}
+.ph h3{font-size:15.5px;margin:0 0 6px}
+.ph ol{margin:0 0 14px;padding-left:1.3em;font-size:14px}
+
+/* お金を守る */
+.money{background:linear-gradient(140deg,#fff,#fff4ef);border:2px solid var(--line);border-radius:22px;padding:20px 18px 10px;margin-bottom:30px}
+.money .lead{font-weight:800;font-size:17px;line-height:1.6;text-align:center;margin:0 0 14px}
+.money .lead span{color:var(--md)}
+.hab{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px dashed var(--line);font-size:14px}
+.hab .e{font-size:22px;line-height:1.3}
+.hab b{display:block;font-size:15px}
+.hab small{color:var(--sub);font-size:12.5px;line-height:1.6;display:block}
+.blog{display:flex;gap:10px;align-items:center;text-decoration:none;background:#fff;border:2px solid var(--line);border-radius:16px;padding:8px;margin:6px 0 12px}
+.blog img{width:96px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;flex-shrink:0;background:var(--pale)}
+.blog .lb{display:inline-block;font-size:11px;font-weight:800;color:var(--md);background:var(--pale);border-radius:99px;padding:0 9px}
+.blog .tt{font-size:13px;font-weight:700;line-height:1.5}
+
+/* シェア・フォロー */
+.share{background:#fff;border:2px solid var(--line);border-radius:22px;padding:20px 18px;text-align:center;margin-bottom:22px}
+.share .t{font-weight:800;font-size:17px;margin:0 0 4px}
+.share .d{font-size:13px;color:var(--sub);margin:0 0 14px}
+.sbtn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;text-decoration:none;border-radius:99px;padding:12px;font-size:15.5px;margin-bottom:10px}
+.sbtn svg{width:20px;height:20px}
+.sbtn.line{background:var(--lineg);color:#fff;box-shadow:0 4px 0 var(--lined)}
+.sbtn.cp{background:var(--pale);color:var(--md)}
+.sbtn.ig{background:linear-gradient(45deg,#f9a03f,#e1306c 50%,#833ab4);color:#fff;box-shadow:0 4px 0 #a52a63}
+.sbtn:active{transform:translateY(2px)}
+.prof{display:flex;gap:12px;align-items:center;text-align:left;margin:0 0 14px}
+.prof img{width:58px;height:58px;border-radius:50%;border:2px solid var(--line);flex-shrink:0;object-fit:cover}
+.prof p{margin:0;font-size:13.5px;line-height:1.75}
+.more{display:block;text-align:center;text-decoration:none;color:#fff;background:var(--md);border-radius:99px;padding:11px;box-shadow:0 4px 0 var(--mdd);font-weight:800;font-size:15px;margin:0 0 8px}
+
+.src{font-size:12.5px;line-height:1.8;padding-left:1.2em;margin:0 0 14px}
+.src a{color:var(--md)}
+.small{font-size:11px;color:var(--sub);text-align:center;margin:20px 0 0;line-height:1.8}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--tx);color:#fff;font-size:13px;border-radius:99px;padding:8px 18px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+@media (max-width:370px){.hero h1{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="./"><img src="https://www.skakeilife.com/wp-content/uploads/2026/09/IMG_7109-1-150x150.png" alt="">しんのページにもどる</a>
+
+<section class="hero">
+  <span class="date">🚨 2026年11月24日　セキュリティ情報</span>
+  <span class="cr" aria-hidden="true"></span>
+  <h1>Google Chromeを<br>使っている人へ</h1>
+  <p class="sub">マネするだけ！<br>3分でできる安全チェック</p>
+  <p class="free">登録なし・無料でそのまま見られるよ🌱</p>
+</section>
+
+<div class="point">
+  <div class="lb">POINT</div>
+  <div class="t">パソコンのChromeを<mark>最新版に更新</mark>すればOK！<br>3分くらいで終わるよ✨</div>
+  <ul>
+    <li>対象はおもに<b>パソコン版</b>（Windows・Mac）</li>
+    <li>Googleはもう修正版を出しているよ</li>
+    <li>更新は<b>Chromeの再起動</b>までやって完了</li>
+  </ul>
+</div>
+
+<div class="sec"><span class="no">01</span><h2>何があったの？</h2></div>
+<section class="card">
+  <p>Googleが11月23日に、パソコン版Chromeの更新を発表したよ<br>中身は<mark>深刻度がいちばん高い「緊急」</mark>の弱点（脆弱性＝ぜいじゃくせい）の修正📢</p>
+  <dl class="fact">
+    <dt>発表</dt><dd>2026年11月23日（Google公式）</dd>
+    <dt>対象</dt><dd>パソコン版Chrome（Windows・Mac・Linux）</dd>
+    <dt>修正版</dt><dd>158.0.8127.88 / .89</dd>
+  </dl>
+  <div class="lv"><span>低</span><span>中</span><span>高</span><span class="on">緊急</span></div>
+  <p class="cap">Googleが使っている4段階の深刻度</p>
+  <p>今回の弱点はGoogle自身が見つけたもので、<b>実際に悪用されたという発表は今のところないよ</b><br>だからあわてなくて大丈夫☺️</p>
+  <p>でも、更新しないままだと古い状態でネットを見続けることになるから、<mark>今のうちに最新にしておこう</mark></p>
+</section>
+
+<div class="chk" id="chk" aria-live="polite">
+  <div class="h">🔍 このページで自動チェック</div>
+  <div class="r" id="chkR">チェック中…</div>
+</div>
+
+<div class="sec"><span class="no">02</span><h2>更新のやり方</h2></div>
+<section class="card">
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-p="pc">💻 パソコン</button>
+    <button role="tab" aria-selected="false" data-p="sp">📱 スマホ</button>
+  </div>
+
+  <div class="panel" id="p-pc">
+    <p style="font-size:13px;color:var(--sub)">WindowsもMacも、やり方は同じだよ</p>
+
+    <div class="step"><div class="n">1</div><div class="b">
+      <div class="t">Chromeの右上の「⋮」をクリック</div>
+      <div class="d">点が縦に3つならんだボタンだよ</div>
+      <div class="scr" aria-hidden="true">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">www.google.com</span><span class="kebab hl">⋮</span></div>
+        <div style="height:34px"></div>
+      </div>
+    </div></div>
+
+    <div class="step"><div class="n">2</div><div class="b">
+      <div class="t">「ヘルプ」→「Google Chrome について」</div>
+      <div class="d">メニューのいちばん下のほうにあるよ</div>
+      <div class="scr" aria-hidden="true">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">www.google.com</span><span class="kebab">⋮</span></div>
+        <div class="menu"><div>新しいタブ</div><div>履歴</div><div>設定</div><div class="hl">ヘルプ<span>›</span></div><div>終了</div></div>
+        <div class="sub2"><div class="hl2">Google Chrome について</div><div>ヘルプセンター</div></div>
+      </div>
+    </div></div>
+
+    <div class="step"><div class="n">3</div><div class="b">
+      <div class="t">自動で更新がはじまるから待つ</div>
+      <div class="d">開いた画面で、Chromeが自分で最新版をさがして入れてくれるよ</div>
+    </div></div>
+
+    <div class="step"><div class="n">4</div><div class="b">
+      <div class="t">「再起動」ボタンを押して完了🎉</div>
+      <div class="d">ここを押さないと更新が反映されないから、忘れずに！</div>
+      <div class="scr" aria-hidden="true">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">chrome://settings/help</span><span class="kebab">⋮</span></div>
+        <div class="about">
+          <div class="row"><span class="ic">✓</span>もう少しで更新が完了します</div>
+          <div class="ver">バージョン 158.0.8127.88</div>
+          <span class="btn">再起動</span>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="tip">
+      <b>✅ 終わったかの見分け方</b><br>
+      同じ画面に「Google Chrome は最新版です」と出て、バージョンが<b>158.0.8127.88</b>か<b>.89</b>以上ならOK！<br><br>
+      <b>💡 再起動しても大丈夫？</b><br>
+      開いていたタブは再起動のあと元にもどるよ<br>入力中のフォームやメールの下書きだけ、先に保存しておいてね
+    </div>
+
+    <div class="tip">
+      <b>⏩ もっと早く開きたい人へ</b><br>
+      Chromeのアドレスバーに下の文字を貼りつけてEnterを押すと、手順2の画面にすぐ行けるよ
+      <div class="copy"><code>chrome://settings/help</code><button type="button" data-copy="chrome://settings/help">コピー</button></div>
+    </div>
+  </div>
+
+  <div class="panel" id="p-sp" hidden>
+    <p>今回のGoogleの発表は<b>パソコン版</b>が対象だよ<br>でもせっかくだから、スマホのChromeアプリも最新か確認しておくと安心🌱</p>
+    <div class="ph">
+      <h3>🍎 iPhoneの人</h3>
+      <ol>
+        <li>「App Store」を開く</li>
+        <li>右上の自分のアイコンをタップ</li>
+        <li>下にスクロールして、Chromeに「アップデート」と出ていたらタップ</li>
+      </ol>
+    </div>
+    <div class="ph">
+      <h3>🤖 Androidの人</h3>
+      <ol>
+        <li>「Playストア」を開く</li>
+        <li>右上の自分のアイコン →「アプリとデバイスの管理」</li>
+        <li>「アップデート利用可能」にChromeがあったら「更新」</li>
+      </ol>
+    </div>
+    <div class="tip"><b>💡 Safariを使っている人は？</b><br>このニュースのためにChromeを入れる必要はないよ<br>そのかわり、iPhone本体のアップデート（設定 → 一般 → ソフトウェアアップデート）も時々チェックしてね</div>
+    <div class="tip"><b>💻 パソコンのChromeも使っている人へ</b><br>このページを自分のLINEに送っておくと、あとでパソコンで見ながら更新できて便利だよ<br>（いちばん下の「LINEで送る」から送れるよ）</div>
+  </div>
+</section>
+
+<div class="sec"><span class="no">03</span><h2>お金を守る話でもあるよ</h2></div>
+<section class="money">
+  <p class="lead">今って銀行も証券口座も<br>ネットで管理する時代<br><span>お金を増やすのと同じくらい<br>守ることも大切</span>だよね💰</p>
+  <p style="font-size:14px">NISAや投資でせっかく育てたお金<br>守るための「ちょっとの習慣」もセットで覚えておこう🌱</p>
+  <div class="hab"><span class="e">🔄</span><div><b>ブラウザ・アプリは最新に</b><small>今回みたいな修正は、更新しないと入らないよ</small></div></div>
+  <div class="hab"><span class="e">🔐</span><div><b>銀行・証券は2段階認証をオン</b><small>パスワードだけよりぐっと守りが強くなるよ</small></div></div>
+  <div class="hab"><span class="e">🔗</span><div><b>メールやSMSのリンクからログインしない</b><small>ブックマークや公式アプリから入るクセをつけよう</small></div></div>
+  <p style="font-size:13px;color:var(--sub);margin-top:12px">証券口座の守り方はブログにもまとめてるよ👇</p>
+  <a class="blog" href="https://www.skakeilife.com/rakuten-sec-security/" target="_blank" rel="noopener">
+    <img src="https://www.skakeilife.com/wp-content/uploads/2026/11/736b4677ee97c6c0d089e0365dcd6f4b.jpg" alt="" loading="lazy">
+    <div><span class="lb">いますぐ</span><div class="tt">楽天証券の情報漏えい、今すぐやる対策3つ</div></div>
+  </a>
+</section>
+
+<section class="share">
+  <p class="t">大切な人にも教えてあげてね♡</p>
+  <p class="d">家族や友達のパソコンも、更新できているとは限らないよ</p>
+  <a class="sbtn line" id="lineShare" href="https://line.me/R/msg/text/?" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1C21.6 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで送る
+  </a>
+  <button class="sbtn cp" type="button" id="urlCopy">🔗 このページのURLをコピー</button>
+</section>
+
+<section class="share">
+  <div class="prof">
+    <img src="https://www.skakeilife.com/wp-content/uploads/2026/09/IMG_4370-150x150.png" alt="しん">
+    <p><b>しん</b>｜忙しいママのお金の味方<br>お金を<b>増やす</b>・<b>守る</b>情報を発信中<br>見逃したくない人はフォローしてね😊</p>
+  </div>
+  <a class="sbtn ig" href="https://www.instagram.com/shin_kakei_life/" target="_blank" rel="noopener">Instagramを見る</a>
+  <a class="more" href="./">しんのページ（無料プレゼントなど）</a>
+</section>
+
+<p style="font-size:13px;font-weight:800;margin:0 0 4px">📎 公式情報</p>
+<ul class="src">
+  <li><a href="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html" target="_blank" rel="noopener">Chrome Releases（Google公式・英語）</a></li>
+  <li><a href="https://support.google.com/chrome/answer/95414?hl=ja" target="_blank" rel="noopener">Google Chrome を更新する（Google公式ヘルプ）</a></li>
+</ul>
+
+<p class="small">※2026年11月24日時点の情報だよ<br>※パソコンの設定によって画面の見た目が少しちがうことがあるよ<br>※会社のパソコンは、社内のルールにしたがってね<br>※Google Chrome は Google LLC の商標です<br>※このページはしん個人のまとめで、Google公式のページではありません</p>
+</div>
+<div class="toast" id="toast">コピーしたよ</div>
+
+<script>
+// タブ切りかえ
+var tabs=document.querySelectorAll('.tabs button');
+function showTab(p){tabs.forEach(function(b){var on=b.dataset.p===p;b.setAttribute('aria-selected',on);document.getElementById('p-'+b.dataset.p).hidden=!on;});}
+tabs.forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.p);});});
+
+// コピー
+function toast(){var t=document.getElementById('toast');t.classList.add('show');setTimeout(function(){t.classList.remove('show');},1500);}
+function copy(txt){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(toast,function(){fallback(txt);});}else{fallback(txt);}
+}
+function fallback(txt){var a=document.createElement('textarea');a.value=txt;document.body.appendChild(a);a.select();try{document.execCommand('copy');toast();}catch(e){}a.remove();}
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){copy(b.dataset.copy);});});
+var pageUrl=location.href.split('#')[0];
+document.getElementById('urlCopy').addEventListener('click',function(){copy(pageUrl);});
+document.getElementById('lineShare').href='https://line.me/R/msg/text/?'+encodeURIComponent('Google Chromeを使っている人へ🚨\n更新のやり方がまとまってるよ\n'+pageUrl);
+
+// 自動チェック
+(function(){
+  var box=document.getElementById('chk'),r=document.getElementById('chkR');
+  var TARGET=[158,0,8127,88];
+  var ua=navigator.userAgent;
+  var isPhone=/iPhone|iPad|iPod|Android/i.test(ua)||(navigator.userAgentData&&navigator.userAgentData.mobile);
+  function cmp(v){var a=v.split('.').map(Number);for(var i=0;i<4;i++){if((a[i]||0)>TARGET[i])return 1;if((a[i]||0)<TARGET[i])return -1;}return 0;}
+  if(isPhone){
+    r.innerHTML='いまスマホで見ているみたい📱<br>パソコンのChromeでこのページを開くと、最新版になっているか自動でチェックできるよ';
+    showTab('sp');
+    return;
+  }
+  var uad=navigator.userAgentData;
+  if(!uad||!uad.getHighEntropyValues){
+    r.innerHTML='Chrome以外のブラウザで見ているみたい<br>Chromeも使っている人は、下の「更新のやり方」で確認してね';
+    return;
+  }
+  uad.getHighEntropyValues(['fullVersionList']).then(function(d){
+    var c=(d.fullVersionList||[]).filter(function(b){return b.brand==='Google Chrome';})[0];
+    if(!c){r.innerHTML='Chrome以外のブラウザで見ているみたい<br>Chromeも使っている人は、下の「更新のやり方」で確認してね';return;}
+    if(cmp(c.version)>=0){
+      box.classList.add('ok');
+      r.innerHTML='<b>このChromeは最新版になっているよ🎉</b><br>家族のパソコンもチェックしてあげてね<div class="v">バージョン '+c.version+'</div>';
+    }else{
+      box.classList.add('ng');
+      r.innerHTML='<b>このChromeはまだ更新されていないみたい⚠️</b><br>下の「更新のやり方」で最新にしてね<div class="v">いまのバージョン '+c.version+'</div>';
+    }
+  }).catch(function(){r.textContent='自動チェックができなかったよ　下の手順で確認してね';});
+})();
+</script>
+</body>
+</html>
